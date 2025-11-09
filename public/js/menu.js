@@ -2,10 +2,20 @@
 async function loadMenu() {
     try {
         const response = await fetch('/api/menu');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const menuItems = await response.json();
-        displayMenu(menuItems);
+        console.log('Menu items loaded:', menuItems);
+        if (menuItems && menuItems.length > 0) {
+            displayMenu(menuItems);
+        } else {
+            console.warn('No menu items found');
+            document.getElementById('menu-grid').innerHTML = '<p style="text-align: center; color: #666; padding: 2rem;">No menu items available. Please add items from the Admin panel.</p>';
+        }
     } catch (error) {
         console.error('Error loading menu:', error);
+        document.getElementById('menu-grid').innerHTML = '<p style="text-align: center; color: #e74c3c; padding: 2rem;">Error loading menu. Please check the console for details.</p>';
     }
 }
 
