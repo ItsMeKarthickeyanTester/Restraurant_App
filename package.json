@@ -1,0 +1,20 @@
+{
+  "name": "restaurant-management-system",
+  "version": "1.0.0",
+  "description": "Restaurant management system with menu CRUD, cart, billing, and sales reporting",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "keywords": ["restaurant", "menu", "billing", "management"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "qrcode": "^1.5.3"
+  }
+}
+

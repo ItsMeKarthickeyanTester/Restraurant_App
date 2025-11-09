@@ -1,0 +1,55 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Idly",
+      "description": "Steamed rice cakes, soft and fluffy",
+      "price": 30,
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "Puttu",
+      "description": "Steamed rice flour cylinders with coconut",
+      "price": 40,
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "Poori",
+      "description": "Deep-fried bread, crispy and golden",
+      "price": 35,
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "Coffee",
+      "description": "South Indian filter coffee",
+      "price": 20,
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "Dosai",
+      "description": "Crispy fermented crepe, served with chutney and sambar",
+      "price": 50,
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "Vadai",
+      "description": "Crispy lentil fritters",
+      "price": 25,
+      "image": ""
+    },
+    {
+      "id": 7,
+      "name": "Pazham Pori",
+      "description": "Sweet banana fritters",
+      "price": 30,
+      "image": ""
+    }
+  ],
+  "orders": []
+}
+

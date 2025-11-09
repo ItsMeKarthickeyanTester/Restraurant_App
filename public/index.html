@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Restaurant</div>
+            <ul class="nav-links">
+                <li><a href="/">Menu</a></li>
+                <li><a href="/admin">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Our Menu</h1>
+            <div id="menu-grid" class="menu-grid">
+                <!-- Menu items will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Cart Sidebar -->
+        <div id="cart-sidebar" class="cart-sidebar">
+            <div class="cart-header">
+                <h2>Cart</h2>
+                <button id="close-cart" class="close-btn">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: ₹<span id="cart-total">0.00</span></strong>
+                </div>
+                <div class="cart-actions">
+                    <button id="clear-cart" class="btn btn-secondary">Clear Cart</button>
+                    <button id="pay-now" class="btn btn-primary">Pay Now</button>
+                    <button id="print-bill" class="btn btn-primary">Print Bill</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Toggle Button -->
+        <button id="cart-toggle" class="cart-toggle">
+            <span id="cart-count">0</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4m7 14h5a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-5m-2 5h6M9 7h6"/>
+            </svg>
+        </button>
+    </main>
+
+    <!-- QR Code Modal -->
+    <div id="qr-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Payment QR Code</h2>
+            <div id="qr-code-container"></div>
+            <p>Scan this QR code to complete payment</p>
+        </div>
+    </div>
+
+    <!-- Bill Print Area (Hidden) -->
+    <div id="bill-print" class="bill-print" style="display: none;">
+        <div class="bill-header">
+            <h2>Restaurant Bill</h2>
+            <p id="bill-date"></p>
+        </div>
+        <div id="bill-items"></div>
+        <div class="bill-total">
+            <strong>Total: ₹<span id="bill-total-amount">0.00</span></strong>
+        </div>
+        <div class="bill-footer">
+            <p>Thank you for your visit!</p>
+        </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
+
