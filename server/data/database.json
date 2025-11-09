@@ -5,49 +5,49 @@
       "name": "Idly",
       "description": "Steamed rice cakes, soft and fluffy",
       "price": 30,
-      "image": ""
+      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
     },
     {
       "id": 2,
       "name": "Puttu",
       "description": "Steamed rice flour cylinders with coconut",
       "price": 40,
-      "image": ""
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop"
     },
     {
       "id": 3,
       "name": "Poori",
       "description": "Deep-fried bread, crispy and golden",
       "price": 35,
-      "image": ""
+      "image": "https://images.unsplash.com/photo-1563379091339-03246963d19a?w=400&h=300&fit=crop"
     },
     {
       "id": 4,
       "name": "Coffee",
       "description": "South Indian filter coffee",
       "price": 20,
-      "image": ""
+      "image": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400&h=300&fit=crop"
     },
     {
       "id": 5,
       "name": "Dosai",
       "description": "Crispy fermented crepe, served with chutney and sambar",
       "price": 50,
-      "image": ""
+      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
     },
     {
       "id": 6,
       "name": "Vadai",
       "description": "Crispy lentil fritters",
       "price": 25,
-      "image": ""
+      "image": "https://images.unsplash.com/photo-1563379091339-03246963d19a?w=400&h=300&fit=crop"
     },
     {
       "id": 7,
       "name": "Pazham Pori",
       "description": "Sweet banana fritters",
       "price": 30,
-      "image": ""
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=300&fit=crop"
     }
   ],
   "orders": []

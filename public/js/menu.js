@@ -27,7 +27,9 @@ function displayMenu(menuItems) {
     menuItems.forEach(item => {
         const menuItem = document.createElement('div');
         menuItem.className = 'menu-item';
+        const imageHtml = item.image ? `<img src="${item.image}" alt="${item.name}" class="menu-item-image" onerror="this.style.display='none'">` : '';
         menuItem.innerHTML = `
+            ${imageHtml}
             <h3>${item.name}</h3>
             <p>${item.description}</p>
             <div class="price">₹${item.price.toFixed(2)}</div>
